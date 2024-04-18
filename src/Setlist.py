@@ -1,4 +1,4 @@
-from Song import Song
+from src.Song import Song
 
 class Setlist:
     songs: [Song]
@@ -40,6 +40,12 @@ class Setlist:
         self.songs.append(Song)
 
     def remove(self, name, artist):
+        removed = False
         for song in self.songs:
             if song.name == name and song.artist == artist:
+                print(f"Removing {song.name}...")
                 self.songs.remove(song)
+                removed = True
+        if not removed:
+            print("No song removed, try different parameters.")
+        

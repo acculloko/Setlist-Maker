@@ -1,6 +1,6 @@
-from Song import Song
-from Setlist import Setlist
-from FileManager import FileManager
+from src.Song import Song
+from src.Setlist import Setlist
+from src.FileManager import FileManager
 
 path = "./data/setlist.csv"
 endCondition = True

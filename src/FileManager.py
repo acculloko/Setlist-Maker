@@ -1,7 +1,7 @@
 # reads and writes CSV files for persistency
 import csv, os, re, spotipy
-from Song import Song
-from Setlist import Setlist
+from src.Song import Song
+from src.Setlist import Setlist
 from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyClientCredentials
 

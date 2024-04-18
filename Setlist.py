@@ -9,10 +9,32 @@ class Setlist:
     def show(self):
         print("\nSetlist:\n")
         for song in sorted(self.songs, key=lambda x: x.votes, reverse=True):
-            print(song)
+            print(f"{song}\n")
+        print(f"{len(self.songs)} total songs.")
 
-    def order(self):
-        pass
+    def findByName(self, name):
+        counter = 0
+        for song in self.songs:
+            if name in song.name:
+                print(f"{song}\n")
+                counter += 1
+        print(f"{counter} songs found.")
+
+    def findByArtist(self, artist):
+        counter = 0
+        for song in self.songs:
+            if artist in song.artist:
+                print(f"{song}\n")
+                counter += 1
+        print(f"{counter} songs found.")
+
+    def findByVotes(self, votes):
+        counter = 0
+        for song in self.songs:
+            if song.votes == votes:
+                print(f"{song}\n")
+                counter += 1
+        print(f"{counter} songs found.")
 
     def add(self, Song):
         self.songs.append(Song)

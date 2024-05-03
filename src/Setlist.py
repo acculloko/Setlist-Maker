@@ -16,8 +16,9 @@ class Setlist:
 
     def findByName(self, name):
         counter = 0
+        time = 0
         for song in self.songs:
-            if name in song.name:
+            if name.casefold() in song.name.casefold():
                 print(f"{song}\n")
                 counter += 1
                 time += song.duration
@@ -25,8 +26,9 @@ class Setlist:
 
     def findByArtist(self, artist):
         counter = 0
+        time = 0
         for song in self.songs:
-            if artist in song.artist:
+            if artist.casefold() in song.artist.casefold():
                 print(f"{song}\n")
                 counter += 1
                 time += song.duration

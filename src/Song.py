@@ -26,6 +26,3 @@ class Song:
 
     def unvote(self):
         self.votes -= 1
-
-
-    

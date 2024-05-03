@@ -1,4 +1,4 @@
-- Pandas table integration
-- Add more attributes to each song
+-[ ] Pandas table integration
+-[ ] Add more attributes to each song
     - e.g. selected, pace, play order, etc.
-- Maybe make a second setlist that takes the selected songs and forms our main setlist
+-[ ] Maybe make a second setlist that takes the selected songs and forms our main setlist
